@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.herokucdn.com/favicon.ico">
+    <title>Fuera de linea por mantenimiento</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        p {
+            color: white;
+            margin: .5rem 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon {
+            width: 100%;
+            height: auto;
+            max-width: 10rem;
+            animation-name: icon-animation;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes icon-animation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="icon" src="./img/mantenimiento.png" alt="icono de mantenimiento">
+        <h1>Fuera de linea por mantenimiento</h1>
+        <p>Esta aplicación esta en mantenimiento en este momento.</p>
+        <p>Por favor, vuelva mas tarde.</p>
+    </div>
+</body>
+
+</html>
